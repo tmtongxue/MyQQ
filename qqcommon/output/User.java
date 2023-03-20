@@ -13,6 +13,8 @@ public class User implements Serializable {
     private String securityAnswer; // 密保问题答案
     private String headImage; // 头像
 
+    public User() {
+    }
 
     public User(String account, String password) {
         this.account = account;
@@ -48,14 +50,6 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getModifiedPassword() {
-        return modifiedPassword;
-    }
-
-    public void setModifiedPassword(String modifiedPassword) {
-        this.modifiedPassword = modifiedPassword;
-    }
-
     public String getUserName() {
         return userName;
     }
@@ -64,11 +58,11 @@ public class User implements Serializable {
         this.userName = userName;
     }
 
-    public String getSecurityAnswer() {
+    public String getSecurity_answer() {
         return securityAnswer;
     }
 
-    public void setSecurityAnswer(String securityAnswer) {
+    public void setSecurity_answer(String securityAnswer) {
         this.securityAnswer = securityAnswer;
     }
 

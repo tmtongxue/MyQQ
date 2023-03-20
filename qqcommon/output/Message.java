@@ -12,7 +12,6 @@ public class Message implements Serializable {
     private String sendTime; // 发送时间
     private String mesType; // 消息类型
     private String fileName; // 文件名字
-    private byte[] bytes; // 文件流字节数组
 
     public String getFileName() {
         return fileName;
@@ -21,6 +20,8 @@ public class Message implements Serializable {
     public void setFileName(String fileName) {
         this.fileName = fileName;
     }
+
+    private byte[] bytes; // 文件流字节数组
 
     public byte[] getBytes() {
         return bytes;
